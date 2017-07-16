@@ -1,0 +1,51 @@
+
+.u-error
+	>div, select
+		border-color $Error !important
+		color $Error !important
+
+	label
+		color $Error
+
+.u-mostrar-field
+	animation mostrar 0.8s ease-in-out forwards
+	animation-delay 0.31s
+	pointer-events all
+	min-height 100%
+	
+.u-ocultar-field
+	animation ocultar 0.4s ease-in-out forwards
+	pointer-events none
+	// transform scale(0.8)
+	// opacity 0
+
+.u-no-border
+	padding 0
+	margin 0
+	
+	.row
+		padding 0
+		margin 0
+		max-width 100%
+		
+
+.u-video
+	height 100%
+	overflow hidden
+	padding-bottom 30rem !important
+	padding-top 0 !important
+	position relative
+
+.u-white
+	color #fff
+	
+
+//Mozilla Hacks//
+_:-moz-tree-row(hover), .u-mostrar-field
+	height auto
+	position relative
+	display block
+	
+_:-moz-tree-row(hover), .u-ocultar-field
+	height 0
+	display none

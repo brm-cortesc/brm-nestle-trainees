@@ -1,0 +1,129 @@
+.checkbox
+	position relative
+	
+	input
+		position absolute
+		left 0
+		opacity 0
+		height 100%
+		width 100%
+		z-index 1
+		
+		&[type=checkbox]:checked+label::before
+			content "\e067"
+	
+	label
+		display inline-block
+		cursor pointer 
+		position relative 
+		padding-left 2rem
+		z-index 0
+		
+		a
+			position relative
+			z-index 2
+		
+		&::before
+			color  $AzulClaro
+			content: "\e157"
+			display inline-block
+			font-family $Icons
+			left 0rem
+			position absolute
+			
+
+.form
+	overflow hidden
+	height 100%
+	max-height 0
+	transitionBase()
+	
+	&.form-show
+		max-height 160rem
+
+	&-controls
+		.btn
+			display block
+			margin 1rem auto
+			max-width 30rem
+			text-transform uppercase
+			width 100%
+	&-holder
+		background-color #f2f1f7
+		border-bottom 2px solid transparent
+		cursor pointer
+		margin 2rem auto
+		padding 1rem
+		position relative
+		transitionBase()
+		
+		&.active
+			background-color transparent
+			border-bottom-color $AzulOscuro
+			label
+				left -2.5rem
+				top -1.2rem
+				transform translateY(0) scale(0.8)
+				pointer-events none
+		
+		input,
+		select
+			background none
+			border none
+			color $AzulOscuro
+			display block
+			padding 0
+			position relative
+			transitionBase()
+			width 100%
+			z-index 1
+
+			&:active,
+			&:focus
+				outline none !important
+				outline 0 !important
+				
+
+		label
+			color $AzulOscuro
+			cursor pointer
+			font-weight $Bold
+			left 1rem
+			margin 0
+			padding 0
+			pointer-events none
+			position absolute
+			top 50%
+			transform translateY(-@top)
+			transform-origin top center
+			transitionBase()
+			width 100%
+			z-index 3
+			
+	&-upload
+		small
+			display block
+			text-align center
+			margin 0 auto
+			
+		.form-holder
+			background-color transparent
+			
+			label
+				background-color $AzulOscuro
+				color #fff
+				display block
+				left 0
+				margin 1rem auto
+				padding 1rem 2rem
+				position relative
+				text-align center
+				top 0
+				transform none
+				
+			input
+				appearance none
+				
+.msn-place
+	color $brand-danger
+					

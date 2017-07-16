@@ -1,0 +1,40 @@
+//path images
+path(img)
+	background-image url("../images/"+img)
+
+transitionBase(el = all ,tiempo = 0.3s, curve = ease-in-out)
+	transition el tiempo curve
+
+cuadrado()
+	height arguments
+	width arguments
+
+circ()
+	border-radius 100%
+	cuadrado arguments
+
+//Soporte de propiedad calc en todos los navegadores modernos
+calc()
+	arguments = unquote(arguments)
+	vendor-prefixes = o ms webkit moz
+
+	for pre in vendor-prefixes
+		add-property(current-property[0], s('-%s-calc(%s)', pre, arguments) )
+
+	s('calc(%s)', arguments)
+
+
+
+skewColor(color)
+	background-color color 
+	bottom 0
+	content ''
+	height 100%
+	left 0
+	position absolute
+	right 0
+	top 0
+	transform skewX(20deg) translateX(120%)
+	transitionBase()
+	width 100%
+	z-index -1

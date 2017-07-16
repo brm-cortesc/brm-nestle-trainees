@@ -1,0 +1,43 @@
+.acerca
+	border-bottom 1px solid $AzulOScuro
+	border-top @border-bottom
+	margin 1rem auto
+	text-align center
+	make-sm-column(8)
+	make-sm-column-offset(2)
+	
+
+.fase
+	&-content
+		make-sm-column(7)
+		make-sm-column-offset(5)
+		
+
+	&:nth-of-type(2)
+		.fase-content
+			make-sm-column-offset(0)
+
+
+.form,
+.mensaje
+	make-sm-column(6)
+	make-sm-column-offset(3)
+	clearfix()
+
+.perfil
+	make-sm-column(4)
+	
+.vacante
+	color #fff
+	make-sm-column(3)
+	// make-md-column(3)
+	position relative
+
+	&-azul
+		background-color $AzulClaro
+	&-mora
+		background-color $Purpura
+	&-naranja
+		background-color $Naranja
+	&-rosa
+		background-color $Magenta

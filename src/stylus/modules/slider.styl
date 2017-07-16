@@ -1,0 +1,31 @@
+.slick
+	&-arrow
+		color #fff
+		font-size 2rem
+		position absolute
+		text-shadow 0px 0px 5px rgba(0,0,0,0.4)
+		top 50%
+		transform translateY(-@top)
+		z-index 20
+		
+		&::after
+			content none
+			display none
+
+		&:active,
+		&:focus,
+		&:hover
+			color $Amarillo
+			text-decoration none
+			
+		
+	&-slide
+		&:active,
+		&:focus,
+		&:hover
+			outline none !important
+			outline 0 !important
+	&-prev
+		left 1rem
+	&-next
+		right 1rem

@@ -1,0 +1,54 @@
+.btn
+	border-radius 0
+	border none
+	transitionBase()
+	padding 1rem 2rem
+	
+	&:active,
+	&:focus
+		outline none !important
+		outline 0 !important
+	
+	&-skew
+		background-color $AzulOscuro
+		color #fff
+		display block
+		overflow hidden
+		position relative
+		z-index 1
+		
+		&::after
+			content none
+			display none
+			
+		&::before
+			skewColor($AzulClaro)
+		
+		&:hover, &.active
+			color #fff
+			&::before
+				transform skewX(20deg) translateX(50%)
+
+	&-show-form
+		background-color #fcbf18
+		color $AzulOscuro
+		font-size 1.7rem
+		margin 1rem auto
+		text-align center
+		text-transform uppercase
+		
+		&::before
+			skewColor(#fce418)
+			
+		&:hover, &.active
+			color $AzulOscuro
+			text-decoration none
+	
+	&-ver
+		font-family $BloggerB
+		font-size 1.7rem
+		font-weight $Bold
+		line-height 1
+		margin 1rem auto
+		text-align center
+		text-transform uppercase

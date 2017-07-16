@@ -1,0 +1,67 @@
+::selection /* WebKit/Blink Browsers */
+	background $Amarillo
+	color #fff
+
+::-moz-selection /* Gecko Browsers */
+	background $Amarillo
+	color #fff
+
+a
+	color $AzulClaro
+	position relative
+	transitionBase(0.3s)
+
+	&::after
+		background-color darken($AzulClaro, 40%)
+		bottom 0
+		content " "
+		display inline
+		height 0.23rem
+		left 0
+		position absolute
+		transitionBase(0.3s)
+		width 0%
+	
+	&:hover
+		color darken($AzulClaro, 40%)
+		text-decoration none
+		
+		&::after
+			width 100%
+	
+	img
+		border none !important
+
+b, strong
+	font-family $BloggerB
+
+body
+	color $Gris
+	font-family $Blogger
+	font-size 1.4rem
+	
+
+em
+	font-family $BloggerItalic
+
+h1,h2,h3,h4,h5,h6
+	color $AzulOscuro
+	font-family $BloggerB
+	text-transform uppercase
+
+
+footer
+	
+	a
+		&:after
+			background-color lighten($AzulClaro, 40%)
+		&:hover
+			color lighten($AzulClaro, 40%)
+	ul
+		list-style-type none
+		margin 0
+		padding 0
+		
+
+sup
+	font-family Arial, sans-serif

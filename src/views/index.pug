@@ -1,0 +1,365 @@
+//-Layout Base
+extends ../templates/base.pug
+
+
+block content
+
+	//Cabezote
+	section.container-fluid
+		div.row
+			h1.intro-title
+				| Tú comienzas,
+				span tu pasión se impulsa
+			
+			+image('banner-trainees.jpg', '#JóvenesConPasión')(class="img-banner")
+	///-Cabezote
+
+
+	section.container-fluid.container-intro
+		div.row
+			h3 comenzamos la búsqueda de trainees nestlé<sup>&reg;</sup> 2017
+			
+			//intro text
+			div.acerca
+				h3 ¿qué es nuestro programa de trainees?
+				p.
+					Se trata de una plataforma de entrenamiento diseñada para desarrollar habilidades y
+					potenciar tus fortalezas profesionales, permitiéndote adquirir una
+					valiosa y enriquecedora experiencia al inicio de tu carrera laboral a
+					través de diferentes áreas de la compañía.
+			///-intro text
+
+	//sección nuestras vacantes
+	section.container-fluid.container-vacantes
+		div.row
+			h2 nuestras vacantes
+			
+			div.slider-vacantes
+				//Vacante
+				div.vacante.vacante-rosa
+					+image('vacante-pink.png')
+					div.vacante-content
+						h3.vacante-cargo Technical Basic
+						p.vacante-desc Trainee
+						
+						//Vacantes disponibles
+						div.vacante-cant
+							p.vacante-area tbt
+							p.vacante-num
+								span 4
+								|  vacantes
+					///-Vacantes disponibles
+				//Vacante
+
+				//Vacante
+				div.vacante.vacante-mora
+					+image('vacante-mora.png')
+					div.vacante-content
+						h3.vacante-cargo Technical Basic
+						p.vacante-desc Trainee
+						
+						//Vacantes disponibles
+						div.vacante-cant
+							p.vacante-area tbt
+							p.vacante-num
+								span 4
+								|  vacantes
+						///-Vacantes disponibles
+				//Vacante
+
+				//Vacante
+				div.vacante.vacante-azul
+					+image('vacante-azul.png')
+					div.vacante-content
+						h3.vacante-cargo Technical Basic
+						p.vacante-desc Trainee
+						
+						//Vacantes disponibles
+						div.vacante-cant
+							p.vacante-area tbt
+							p.vacante-num
+								span 4
+								|  vacantes
+						///-Vacantes disponibles
+				//Vacante
+
+
+				//Vacante
+				div.vacante.vacante-naranja
+					+image('vacante-naranja.png')
+					div.vacante-content
+						h3.vacante-cargo Technical Basic
+						p.vacante-desc Trainee
+						
+						//Vacantes disponibles
+						div.vacante-cant
+							p.vacante-area tbt
+							p.vacante-num
+								span 4
+								|  vacantes
+				//Vacante
+		///-Vacantes disponibles
+
+	//sección nuestras vacantes
+	   
+	//Jovenes con pasión
+	section.container-fluid.container-pasion
+		div.row
+			div.pasion
+				h2 jóvenes con pasión
+
+				p ¡Queremos que seas el próximo en contarnos tu historia!
+				
+			//video caso
+			div.embed-responsive.embed-responsive-16by9
+				iframe.embed-responsive-item(src="https://www.youtube.com/embed/marF1Sh4fmU?rel=0")
+			///-video caso
+
+			//Boton sitio general
+			a.btn.btn-skew.btn-ver(href="https://www.jovenesnestle.com.co/") Conoce más del proceso y de nuestro programa
+			///-Boton sitio general
+
+	///-Jovenes con pasión
+	
+	//Fases del programa
+	section.container-fluid.container-programa
+		div.row
+			h2 fases del programa
+
+		div.slider-fases
+		
+			//reclutamiento
+			div.row.fase.fase-mora
+				
+				//img
+				div.fase-skew
+					div.fase-mask
+						+image('reclutamiento.jpg')
+
+				///-img
+
+				//content fase
+				div.fase-content
+					h3 reclutamiento
+					p.
+						Con un proceso de selección desafiante, retador e innovador a través de diversos filtros y actividades vamos a asegurar seleccionar al mejor talento joven con las características necesarias para comenzar un proceso de desarrollo intensivo.
+				///-content fase
+
+			///-reclutamiento
+
+
+			//integracion
+			div.row.fase.fase-verde
+				
+
+				//content fase
+				div.fase-content
+					h3  Integración al mundo NESTLÉ<sup>&reg;</sup>
+					p.
+						A través de este espacio garantizamos que nuestros trainees conozcan la historia y cultura de la empresa.
+				///-content fase
+
+				//img
+				div.fase-skew
+					div.fase-mask
+						+image('integracion.jpg')
+
+				///-img
+			///-integracion
+
+
+			//asignaciones
+			div.row.fase.fase-rosa
+				
+				//img
+				div.fase-skew
+					div.fase-mask
+						+image('asignaciones.jpg')
+
+				///-img
+
+				//content fase
+				div.fase-content
+					h3  Asignaciones
+					p.
+						Durante el tiempo en el que los trainees participarán en el programa, tendrán la oportunidad de rotar por diferentes funciones y áreas de la compañía.
+				///-content fase
+
+			///-asignaciones
+
+
+
+	///-Fases del programa
+
+	//Perfiles
+	section.container-fluid.container-perfiles
+		
+		div.row
+			h2 Perfiles
+			div.slider-perfiles
+				//educacion
+				div.perfil.perfil-verde
+					div.perfil-content
+
+						h3
+							+image('educacion.svg')
+							span Educación y experiencia:
+						
+						ul.skills
+							li Profesional (formación dependiendo del área funcional).
+
+							li Para aplicar tu experiencia laboral no debe ser mayor a  un año.
+
+				///-educacion
+
+
+				//habilidades
+				div.perfil.perfil-naranja
+					div.perfil-content
+						h3
+							+image('habilidades.svg')
+							span Habilidades técnicas:
+						
+						ul.skills
+							li Inglés avanzado
+
+							li Habilidades de comunicación y negociación evidentes en diferentes grupos
+
+
+				///-habilidades
+
+
+				//learning
+				div.perfil.perfil-azul
+					div.perfil-content
+						h3
+							+image('learning.svg')
+							span Habilidades técnicas:
+						
+						ul.skills
+
+							li Capacidad para aprender rápidamente
+
+							li Alta flexibilidad y adaptabilidad a diferentes contextos
+
+							li Tener disponibilidad para trabajar en otras ciudades
+
+				///-learning
+
+	///-Perfiles
+
+	//registro
+	section.container-fluid.container-registro
+		div.row
+			h2 regístrate acá
+			p.text-center Recibirás más información de las fases
+			a.btn.btn-skew.btn-show-form(href="#") quiero entrenarme
+			//Formulario
+			form#trainees.form
+				//Nombres
+				div.form-group
+					div.form-holder
+						label(for="nombre") Nombre
+						input(type="text", name="nombre", id="nombre")
+				///-Nombres
+
+				//Apellidos
+				div.form-group
+					div.form-holder
+						label(for="apellidos") Apellidos
+						input(type="text", name="apellidos", id="apellidos")
+				///-Apellidos
+
+				//Profesion
+				div.form-group
+					div.form-holder
+						label(for="programa") Programa al que se postula
+						select(name="programa" id="programa")
+							option(value="") 
+							option(value="1") 2
+							option(value="2") 3
+							option(value="3") 4
+				///-Profesion
+
+				//Correo
+				div.form-group
+					div.form-holder
+						label(for="correo") Correo
+						input(type="correo", name="correo", id="correo")
+				///-Correo
+				
+				//departamento
+				div.form-group
+					div.form-holder
+						label(for="departamento") Departamento
+						select(name="departamento" id="departamento")
+							option(value="") 
+							option(value="1") 2
+							option(value="2") 3
+							option(value="3") 4
+				///-departamento
+
+				//departamento
+				div.form-group
+					div.form-holder
+						label(for="ciudad") ciudad
+						select(name="ciudad" id="ciudad")
+							option(value="") 
+							option(value="1") 2
+							option(value="2") 3
+							option(value="3") 4
+				///-departamento
+				
+				//Direccion
+				div.form-group
+					div.form-holder
+						label(for="direccion") Dirección
+						input(type="text", name="direccion", id="direccion")
+				///-Direccion
+
+				//file
+				div.form-group.form-upload
+					div.form-holder
+						label(for="cv") Subir hoja de vida
+						input(type="file", name="cv", id="cv")
+						small formato PDF
+				///-file
+
+				//captcha
+				div.form-captcha
+					h3 aca va captcha
+					div.captcha
+				///-captcha
+
+				//legal
+				div.form-legal
+					div.checkbox
+						input(type="checkbox", name="terminos", id="terminos")
+
+						label.
+							Acepto los términos y condiciones establecidos en los avisos legales:
+							Politica de Privacidad y Politica de Tratamiento de datos 
+
+				///-legal
+
+				//buttons
+				div.form-controls
+					button.btn.btn-skew.btn-submit(type="submit") Enviar
+					button.btn.btn-skew.btn-refresh(type="button") Renovar
+				///-buttons
+
+
+			///-Formulario
+			//mensajes
+			div.mensaje.hidden
+				h3 Se enviaron los datos
+			///-mensajes
+	///-registro
+
+
+
+
+block Scripts
+	script(src="js/youth-trainees.init.js")
+	script(src="js/youth-trainees.validate.js")
+

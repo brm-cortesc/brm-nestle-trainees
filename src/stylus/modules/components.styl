@@ -1,0 +1,174 @@
+.fase
+	min-height 20rem
+	&-content
+		color #fff
+		padding 0.5rem 2rem
+		
+		h3
+			background-color rgba(255,255,255,.4)
+			color #fff
+			text-align center
+			transitionBase()
+
+			
+		p
+			text-align justify
+			text-align-last left
+			
+
+	
+
+	&-mora
+		background $Purpura
+		gradient-vertical($Purpura, darken($Purpura, 40%), 0, 100%)
+	
+	&-rosa
+		background $Magenta
+		gradient-vertical($Magenta, darken($Magenta, 40%), 0, 100%)
+	&-verde
+		background $Verde
+		gradient-vertical($Verde, darken($Verde, 40%), 0, 100%)
+
+	&-skew
+		display none
+		position relative
+		.fase-mask
+			height 0
+			left -8%
+			overflow hidden
+			padding-bottom 17.3rem
+			position absolute
+			top 0
+			transform skewX(-30deg) 
+			width 41%
+			
+			img
+				transform skewX(30deg) scale(1.4)
+				
+	&:nth-of-type(2)
+		.fase-skew
+			.fase-mask
+				left initial
+				right -8%
+				transform skewX(30deg)
+				
+				img
+					transform skewX(-30deg) scale(1.4) translateY(1.1rem)
+	&:nth-of-type(3)
+		.fase-skew
+			.fase-mask
+				img
+					transform skewX(30deg) scale(1.4) translateX(8rem) translateY(2rem)
+
+.intro
+	&-title
+		center-block()
+		color $AzulClaro
+		font-family $Blogger
+		font-size 2rem
+		font-weight $Light
+		line-height 1.1
+		margin 1rem auto
+		max-width 24rem
+		padding 1rem 2rem
+		text-align center
+		transitionBase()
+		
+		
+		span
+			background-color $Magenta
+			color #fff
+			display block
+			
+
+.pasion
+	text-align center
+	
+	h2
+		background-color $AzulClaro
+		color #fff
+		font-family $Alfa
+		margin 0 auto
+		max-width 90%
+		padding 1rem 2rem
+		
+
+	p
+		background-color rgba(255,255,255, 0.85)
+		color $AzulOscuro
+		font-size 1.6rem
+		line-height 1.1
+		padding 1rem 2rem
+		margin 0  auto 1rem
+		
+.perfil
+	color #fff
+	h3
+		color #fff
+		line-height 1
+		text-align left
+		img, span
+			vertical-align middle
+		img
+			max-width 4rem
+			
+		span
+			padding-left 1rem
+			
+	&-azul
+		.perfil-content
+			background-color $AzulClaro
+		
+	&-naranja
+		.perfil-content
+			background-color $Naranja
+	&-verde
+		.perfil-content
+			background-color $Verde
+		
+	&-content
+		min-height 34rem
+		padding 1rem 2rem
+		
+			
+	.skills
+		padding-left 2rem
+		li 
+			border-bottom 1px solid white
+			padding 1rem 0.5rem
+
+			&:last-of-type
+				border-bottom-color transparent
+			
+			
+.text
+	&-center
+		text-align center
+	
+.vacante
+	padding-bottom 2rem
+	
+	img
+		img-responsive(block)
+		margin 0 auto
+		width 100%
+	
+	p
+		font-size 1.6rem
+		line-height 1
+		margin 0
+		
+	&-area
+		font-size 1.8rem
+		text-transform uppercase
+	&-cant
+		margin-top 1rem
+		
+	&-cargo
+		color #fff
+		line-height 1
+		margin-bottom 0
+		
+	&-content
+		padding-left $Gutter
+		padding-right @padding-left
